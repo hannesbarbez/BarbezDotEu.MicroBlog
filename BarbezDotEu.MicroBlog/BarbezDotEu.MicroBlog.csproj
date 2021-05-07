@@ -1,7 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Authors>Hannes Barbez</Authors>
+    <Company>Hannes Barbez</Company>
+    <Title>BarbezDotEu.MicroBlog</Title>
+    <Product>BarbezDotEu.MicroBlog</Product>
+    <PackageId>BarbezDotEu.MicroBlog</PackageId>
+    <Copyright>©2021 Hannes Barbez</Copyright>
+    <Version>1.0.0</Version>
+    <Description>This package contains base logic (DTOs, enumerations, equality comparers, ...) that can be used in the context of internet-based microblogs and microblogging services.</Description>
+    <PackageTags>basic;microblogging;barbez</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://barbez.eu</PackageProjectUrl>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.MicroBlog</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
 </Project>
