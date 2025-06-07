@@ -1,28 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Hannes Barbez</Authors>
-    <Company>Hannes Barbez</Company>
-    <Title>BarbezDotEu.MicroBlog</Title>
-    <Product>BarbezDotEu.MicroBlog</Product>
-    <PackageId>BarbezDotEu.MicroBlog</PackageId>
-    <Copyright>©2025 Hannes Barbez</Copyright>
-    <Version>2.0.1</Version>
-    <Description>Base logic (DTOs, enumerations, equality comparers, ...) that can be used in the context of internet-based microblogs and microblogging services.</Description>
-    <PackageTags>basic;microblogging;barbez</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://barbez.eu</PackageProjectUrl>
-    <PackageOutputPath>./nupkg</PackageOutputPath>
-    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.MicroBlog</RepositoryUrl>
-    <RepositoryType>GIT</RepositoryType>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageIconUrl>https://i2.wp.com/barbez.eu/wp-content/uploads/2020/02/cropped-BarbezDotEu-logo-1.png?resize=64%2C64</PackageIconUrl>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup>
-      <GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Authors>Hannes Barbez</Authors>
+        <Company>Hannes Barbez</Company>
+        <Title>BarbezDotEu.MicroBlog</Title>
+        <Product>BarbezDotEu.MicroBlog</Product>
+        <PackageId>BarbezDotEu.MicroBlog</PackageId>
+        <Copyright>©2025 Hannes Barbez</Copyright>
+        <Version>2.0.1</Version>
+        <Description>Base logic (DTOs, enumerations, equality comparers, ...) that can be used in the context of internet-based microblogs and microblogging services.</Description>
+        <PackageTags>basic;microblogging;barbez</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://barbez.eu</PackageProjectUrl>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+        <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.MicroBlog</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>ICON.png</PackageIcon>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
 
     <!-- only applies when Configuration == Release: -->
     <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -31,4 +30,8 @@
         <DebugSymbols>false</DebugSymbols>
         <Optimize>true</Optimize>
     </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\ICON.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
 </Project>
